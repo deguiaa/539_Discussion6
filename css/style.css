@@ -1,0 +1,123 @@
+body{
+   line-height: 200%;
+}
+
+
+header, nav{
+    padding: 10px 5px 10px 5px;
+    margin: 15px 10px 15px 10px
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(208, 223, 181);
+}
+
+nav a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:black
+
+}
+
+nav a.current{
+    text-decoration: wavy;
+    text-underline-offset: 2px;
+    text-transform: uppercase;
+    color:darkblue
+}
+
+
+h1{
+   /*Set font and font size*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin: 15px
+}
+
+h3{
+    /*Set font size*/
+    font-size: 15px;
+    
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin: 15px
+}
+
+
+.grid{
+        /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    grid-gap: 10px;
+    justify-content:space-around
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: solid 2px black;
+    border-radius: 5px;
+    padding:10px
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    border: solid 2px black;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (min-width: 700px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        grid-gap: 10px;
+        justify-content:space-around
+    }
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+}
+    
+
+p + p {
+     /* Set indentation */
+  }
+  
+p{
+     /* Set margin */
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+}
